@@ -2,9 +2,14 @@
   :description "Tutorial Todo Application with Clojure and Clojurescript"
   :url "http://www.github.com/lygaret/todoclj"
 
-  :source-path "src/clj"
+  :source-paths ["src/clj"
+                 "config"]
+                 
   :dependencies [[org.clojure/clojure "1.5.1"]
                  
+                 ;; configuration and infrastructure
+                 [environ "0.4.0"]
+
                  ;; data access
                  [korma "0.3.0-RC5"]
                  [com.mchange/c3p0 "0.9.2.1"]
